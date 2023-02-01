@@ -20,8 +20,7 @@ public class BetterString implements TwoStringPredicate{
         String str1 = "hello";
         String str2 = "what";
 
-        TwoStringPredicate testLambda = ((a, b) -> a.length() > b.length());
-        String result = betterString(str1, str2, testLambda);
+        String result = betterString(str1, str2, (a, b) -> a.length() > b.length());
         System.out.println("Result: " + result);
 
 
