@@ -1,7 +1,5 @@
 import java.util.Arrays;
 import java.util.*;
-import java.util.function.BiFunction;
-import java.util.function.Predicate;
 
 public class Outline {
 
@@ -12,17 +10,7 @@ public class Outline {
   }
 
   public static int eChecker(String a){
-    int answer = (a.contains("E") || a.contains("e") ? 0 : 1);
-    return answer;
-  }
-
-  public static String betterString(String s1, String s2, BiFunction a){
-    if(a(s1, s2) = s1) {
-      return s2;
-    }else{
-      return s2;
-    }
-
+    return (a.contains("E") || a.contains("e") ? 0 : 1);
   }
 
   public static void main(String... args) { // varargs alternative to String[]
