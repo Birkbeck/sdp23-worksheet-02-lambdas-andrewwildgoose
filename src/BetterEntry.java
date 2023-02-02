@@ -7,7 +7,7 @@ public class BetterEntry {
         sortItems.sort(T::compareTo);
         return sortItems.get(0).equals(s1);
     }
-    public static <T extends Comparable> T betterEntry(T s1, T s2, TwoElementPredicate a){
+    public static <T extends Comparable> T betterEntry(T s1, T s2, TwoElementPredicate<T> a){
         if(a.twoElementPredicate(s1, s2)) {
             return s1;
         }else{
